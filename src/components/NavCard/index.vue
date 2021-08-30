@@ -1,6 +1,10 @@
 <template>
   <div class="card__container">
-    <fa-icon :icon="navCardData.icon" class="card__icon"></fa-icon>
+    <fa-icon
+      :icon="navCardData.icon"
+      class="card__icon"
+      :class="cardActive && 'card__icon--active'"
+    ></fa-icon>
     <p class="card__title">
       {{ navCardData.title }}
     </p>
@@ -10,16 +14,12 @@
 <script>
 export default {
   name: "NavCard",
-  props: ["navCardData"],
+  props: ["navCardData", "cardActive"],
   data() {
-    return {
-      icon: "",
-    };
+    return {};
   },
-  methods: {
-    handleClick() {
-      console.log(this.navCardData);
-    },
+  mounted() {
+    console.log("Active? ", this.cardActive);
   },
 };
 </script>
@@ -36,11 +36,16 @@ export default {
   justify-content: center;
   gap: 0.5rem;
 
+  cursor: pointer;
+
   .card__icon {
     width: 100%;
     font-size: 2rem;
     color: gray;
     text-justify: center;
+  }
+  .card__icon--active {
+    color: orange;
   }
   .card__title {
     font-weight: 600;

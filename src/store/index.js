@@ -11,6 +11,12 @@ export default createStore({
   mutations: {
     setCurrentFilter: (state, payload) => (state.currentFilter = payload),
     setCardsData: (state, payload) => (state.cardsData = payload),
+    sortCardsData: (state, payload) =>
+      (state.cardsData = state.cardsData.sort((a, b) => {
+        if (a[payload] > b[payload]) return 1;
+        if (a[payload] < b[payload]) return -1;
+        return 0;
+      })),
     setCardsNavData: (state, payload) => (state.cardsNavData = payload),
   },
   getters: {

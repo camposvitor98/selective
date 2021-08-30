@@ -6,9 +6,17 @@
         v-for="data in cardsNavData"
         :key="data.id"
         :navCardData="data"
+        :cardActive="data.title === currentFilter"
         @click="filter(data.title)"
       />
     </nav>
+    <div class="home__sort">
+      <strong>Ordenar</strong>
+      <select name="sort" @change="handleSortCardsData">
+        <option value="price">Preço</option>
+        <option value="release">Lançamento</option>
+      </select>
+    </div>
     <div class="home__cards">
       <card v-for="data in filteredCards" :key="data.id" :cardData="data" />
     </div>
@@ -30,24 +38,33 @@ export default {
     NavCard,
   },
   data() {
-    return {};
+    return {
+      autoplay: true,
+    };
   },
   methods: {
     ...mapActions(["getCardsData", "getCardsNavData"]),
-    ...mapMutations(["setCurrentFilter"]),
+    ...mapMutations(["setCurrentFilter", "sortCardsData"]),
     filter(id) {
       this.setCurrentFilter(id);
-      console.log(this.currentFilter);
+    },
+    handleSortCardsData(e) {
+      this.sortCardsData(e.target.value);
+    },
+    continueAutoplay() {
+      const interval = setInterval(() => {
+        if (!this.autoplay) clearInterval(interval);
+      }, 5000);
     },
   },
   computed: {
     ...mapState(["currentFilter", "cardsNavData"]),
     ...mapGetters(["filteredCards"]),
   },
-
   created() {
     this.getCardsData();
     this.getCardsNavData();
+    this.continueAutoplay();
   },
 };
 </script>
@@ -61,9 +78,25 @@ export default {
   .home__nav-cards {
     display: flex;
     margin-top: 4rem;
+    gap: 0.25rem;
+  }
+  .home__sort {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    strong {
+      text-transform: uppercase;
+    }
+
+    select {
+      padding: 0.25rem 0;
+      width: 10%;
+    }
   }
   .home__cards {
-    margin-top: 5rem;
+    margin-top: 3rem;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;

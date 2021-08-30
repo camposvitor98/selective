@@ -11,12 +11,15 @@
     </div>
     <footer class="card__footer">
       <span class="card__price">{{ cardData.price }}</span>
-      <span class="card__more" @click="handleClick">Saiba Mais</span>
+      <router-link :to="`/${cardData.id}`" class="card__more">
+        <span @click="handleClick">Saiba Mais</span>
+      </router-link>
     </footer>
   </div>
 </template>
 
 <script>
+import "./style.scss";
 export default {
   name: "Card",
   props: ["cardData"],
@@ -32,49 +35,3 @@ export default {
   },
 };
 </script>
-
-<style scoped lang="scss">
-.card__container {
-  border: 1px solid orange;
-  height: 22rem;
-  width: 20rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 0.75rem;
-  .card__body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-
-    padding: 1rem 1.5rem 0rem;
-    margin-top: auto;
-    .card__icon {
-      font-size: 4rem;
-      color: orange;
-    }
-  }
-  .card__footer {
-    width: 100%;
-    height: 3.5rem;
-    margin-top: auto;
-    display: flex;
-    justify-content: space-between;
-    span {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      padding: 0 1rem;
-    }
-    .card__more {
-      cursor: pointer;
-      justify-content: flex-end;
-    }
-  }
-}
-</style>
