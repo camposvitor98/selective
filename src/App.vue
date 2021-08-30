@@ -1,12 +1,14 @@
 <template>
-  <div id="global__container">
+  <div id="app__container">
     <router-view />
   </div>
 </template>
 
 <style scoped lang="scss">
-#global__container {
-  min-height: 100vh;
-  min-width: 100vw;
+#app__container {
+  height: 100vh;
+  width: 100vw;
+
+  padding: 0;
 }
 </style>

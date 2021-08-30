@@ -18,8 +18,8 @@ export default {
 
 <style scoped lang="scss">
 .details__container {
-  height: 100%;
-  width: 100%;
+  min-height: 100%;
+  min-width: 100%;
   border: solid purple;
   h1 {
     color: pink;

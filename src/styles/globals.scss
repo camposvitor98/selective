@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 
+*,
 html,
 body {
   padding: 0;
@@ -9,23 +10,23 @@ body {
 html {
   font-size: 75%; //12px
 
-  @media (min-width: 640px) {
+  @media screen and (min-width: 640px) {
     font-size: 81.5%; //13px
   }
 
-  @media (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     font-size: 87.5%; //14px
   }
 
-  @media (min-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     font-size: 93.75%; //15px
   }
 
-  @media (min-width: 1280px) {
+  @media screen and (min-width: 1280px) {
     font-size: 100%; //16px
   }
 
-  @media (min-width: 1536px) {
+  @media screen and (min-width: 1536px) {
     font-size: 106.25%; //17px
   }
 }
@@ -34,15 +35,17 @@ html {
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
   outline: transparent;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     z-index: 1000;
-    width: 0.5rem;
-    background-color: var(--gray-80);
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #ddd;
     border-radius: 2rem;
   }
   &::-webkit-scrollbar-thumb {
-    background-color: var(--gray-70);
+    background-color: #ccc;
     border-radius: 2rem;
   }
 }
