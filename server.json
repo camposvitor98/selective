@@ -1,0 +1,135 @@
+{
+  "cards": [
+    {
+      "id": "1",
+      "title": "Profissional",
+      "price": "R$29,99",
+      "icon": "briefcase"
+    },
+    {
+      "id": "2",
+      "title": "Reguladores",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "landmark"
+    },
+    {
+      "id": "3",
+      "title": "Sócio Ambiental",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "tree"
+    },
+    {
+      "id": "4",
+      "title": "Jurídico",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "gavel"
+    },
+    {
+      "id": "5",
+      "title": "Listas Restritivas",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "ban"
+    },
+    {
+      "id": "6",
+      "title": "Mídia / Internet",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "globe-americas"
+    },
+    {
+      "id": "7",
+      "title": "Bens e Imóveis",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "gem"
+    },
+    {
+      "id": "8",
+      "title": "Cadastro",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "male"
+    },
+    {
+      "id": "9",
+      "title": "Financeiro",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "piggy-bank"
+    },
+    {
+      "id": "10",
+      "title": "Financeiro",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "piggy-bank"
+    },
+    {
+      "id": "11",
+      "title": "Sócio Ambiental",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "tree"
+    },
+    {
+      "id": "12",
+      "title": "Jurídico",
+      "text": "O aplicativo Balanço Patrimonial realiza a consulta de balanços que são publicados nos Diários Oficiais de empresas S.A., de capital aberto e limitadas (LTDA) de grande porte.",
+      "price": "R$29,99",
+      "icon": "gavel"
+    }
+  ],
+  "nav-cards": [
+    { "id": "0", "title": "Todos", "icon": "globe" },
+    {
+      "id": "1",
+      "title": "Profissional",
+      "icon": "briefcase"
+    },
+    {
+      "id": "2",
+      "title": "Reguladores",
+      "icon": "landmark"
+    },
+    {
+      "id": "3",
+      "title": "Sócio Ambiental",
+      "icon": "tree"
+    },
+    {
+      "id": "4",
+      "title": "Jurídico",
+      "icon": "gavel"
+    },
+    {
+      "id": "5",
+      "title": "Listas Restritivas",
+      "icon": "ban"
+    },
+    {
+      "id": "6",
+      "title": "Mídia / Internet",
+      "icon": "globe-americas"
+    },
+    {
+      "id": "7",
+      "title": "Bens e Imóveis",
+      "icon": "gem"
+    },
+    {
+      "id": "8",
+      "title": "Cadastro",
+      "icon": "male"
+    },
+    {
+      "id": "9",
+      "title": "Financeiro",
+      "icon": "piggy-bank"
+    }
+  ]
+}
